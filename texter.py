@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import pyperclip
+from sys import  argv
 
 def mac(arg,f='u'):
 
@@ -14,18 +15,37 @@ def mac(arg,f='u'):
     CISCO_STYLE={'Cisco-Style': MAC[0:4] + '.' + MAC[4:8] + '.' + MAC[8:]}
     if f =='c':
         pyperclip.copy(CISCO_STYLE['Cisco-Style'])
+        print(CISCO_STYLE['Cisco-Style'],('bufferd'))
+        print(HP_STALE['HP-Style'])
+        print(LOW['low'].lower())
+        print(UP['up'])
+
     elif f == 'h':
         pyperclip.copy(HP_STALE['HP-Style'])
+        print(CISCO_STYLE['Cisco-Style'])
+        print(HP_STALE['HP-Style'],'bufferd')
+        print(LOW['low'].lower())
+        print(UP['up'])
+
+
     elif f == 'l':
         pyperclip.copy(LOW['low'].lower())
+        print(CISCO_STYLE['Cisco-Style'])
+        print(HP_STALE['HP-Style'])
+        print(LOW['low'].lower(),'bufferd')
+        print(UP['up'])
+
+
     else:
         pyperclip.copy(UP['up'])
+        print(CISCO_STYLE['Cisco-Style'])
+        print(HP_STALE['HP-Style'])
+        print(LOW['low'].lower())
+        print(UP['up'],'bubberd')
 
 
-    print(CISCO_STYLE['Cisco-Style'])
-    print(HP_STALE['HP-Style'])
-    print(LOW['low'].lower())
-    print(UP['up'])
+
+
 
 
 
