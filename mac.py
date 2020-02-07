@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
-''' this script chagnes mac addresses  '''
+''' this script chagnes mac addresses presentation format '''
 import pyperclip
 from sys import argv
 
