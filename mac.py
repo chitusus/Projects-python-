@@ -18,31 +18,37 @@ def mac(arg, f='u'):
     CISCO_STYLE = {'Cisco-Style': MAC[0:4] + '.' + MAC[4:8] + '.' + MAC[8:]}
     if f == 'c':
         pyperclip.copy(CISCO_STYLE['Cisco-Style'])
-        print(CISCO_STYLE['Cisco-Style'], ('bufferd'))
-        print(HP_STALE['HP-Style'])
-        print(LOW['low'].lower())
-        print(UP['up'])
+        print("{:.<15s} {} {}".format('Cisco Style:',CISCO_STYLE['Cisco-Style'],'bufferd'))
+        print("{:.<15s} {} ".format('HP Style:', HP_STALE['HP-Style']))
+        print("{:.<15s} {} ".format('Low Style:', LOW['low'].lower()))
+        print("{:.<15s} {} ".format('Up Style:',UP['up']))
+
 
     elif f == 'h':
         pyperclip.copy(HP_STALE['HP-Style'])
-        print(CISCO_STYLE['Cisco-Style'])
-        print(HP_STALE['HP-Style'], 'bufferd')
-        print(LOW['low'].lower())
-        print(UP['up'])
+        print("{:.<15s} {}".format('Cisco Style:',CISCO_STYLE['Cisco-Style']))
+        print("{:.<15s} {} {}".format('HP Style:', HP_STALE['HP-Style'],'bufferd'))
+        print("{:.<15s} {} ".format('Low Style:', LOW['low'].lower()))
+        print("{:.<15s} {} ".format('Up Style:',UP['up']))
+        # print(CISCO_STYLE['Cisco-Style'])
+        # print(HP_STALE['HP-Style'], 'bufferd')
+        # print(LOW['low'].lower())
+        # print(UP['up'])
 
     elif f == 'l':
         pyperclip.copy(LOW['low'].lower())
-        print(CISCO_STYLE['Cisco-Style'])
-        print(HP_STALE['HP-Style'])
-        print(LOW['low'].lower(), 'bufferd')
-        print(UP['up'])
+        print("{:.<15s} {} ".format('Cisco Style:',CISCO_STYLE['Cisco-Style']))
+        print("{:.<15s} {} ".format('HP Style:', HP_STALE['HP-Style']))
+        print("{:.<15s} {} {}".format('Low Style:', LOW['low'].lower(),'buffered'))
+        print("{:.<15s} {} ".format('Up Style:',UP['up']))
+
 
     else:
         pyperclip.copy(UP['up'])
-        print(CISCO_STYLE['Cisco-Style'])
-        print(HP_STALE['HP-Style'])
-        print(LOW['low'].lower())
-        print(UP['up'], 'bubberd')
+        print("{:.<15s} {} ".format('Cisco Style:',CISCO_STYLE['Cisco-Style']))
+        print("{:.<15s} {} ".format('HP Style:', HP_STALE['HP-Style']))
+        print("{:.<15s} {} ".format('Low Style:', LOW['low'].lower()))
+        print("{:.<15s} {} {}".format('Up Style:',UP['up'],'bufferd'))
 
 
 if __name__ == "__main__":
