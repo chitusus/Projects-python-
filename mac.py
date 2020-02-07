@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
-
+''' this script chagnes mac addresses  '''
 import pyperclip
 from sys import argv
 
@@ -45,6 +45,7 @@ def mac(arg, f='u'):
         print("{:.<15s} {} ".format('HP Style:', HP_STALE['HP-Style']))
         print("{:.<15s} {} ".format('Low Style:', LOW['low'].lower()))
         print("{:.<15s} {} {}".format('Up Style:',UP['up'],'bufferd'))
+
 
 
 if __name__ == "__main__":
