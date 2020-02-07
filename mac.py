@@ -30,10 +30,6 @@ def mac(arg, f='u'):
         print("{:.<15s} {} {}".format('HP Style:', HP_STALE['HP-Style'],'bufferd'))
         print("{:.<15s} {} ".format('Low Style:', LOW['low'].lower()))
         print("{:.<15s} {} ".format('Up Style:',UP['up']))
-        # print(CISCO_STYLE['Cisco-Style'])
-        # print(HP_STALE['HP-Style'], 'bufferd')
-        # print(LOW['low'].lower())
-        # print(UP['up'])
 
     elif f == 'l':
         pyperclip.copy(LOW['low'].lower())
