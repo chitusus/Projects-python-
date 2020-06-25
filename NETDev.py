@@ -37,31 +37,3 @@ def get_ticket():
 get_ticket()
 
 
-
-
-
-
-
-
-
-
-
-
-# url = "https://sandboxapicem.cisco.com/api/v1/ticket"
-# url_new = 'https://api.github.com'
-# payload = {"password": "Cisco123!","username": "devnetuser"}
-#
-# headers = {'Content-Type':'application/json'}
-# res = requests.post(url, json.dumps(payload), headers=headers)
-#
-# response = requests.get(url_new)
-# print(response.headers['Content-Type'])
-# response.headers['Content-Type']
-# response.headers
-# print(res.text.encode('utf8'))
-
-# response=response.json()
-#
-# for i in response:
-#     print(i)
-# print(response)
